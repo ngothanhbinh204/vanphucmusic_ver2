@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href=""><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+		<title></title>
+		<script>
+			var APP_CONFIG={
+				toast:{
+					title:{
+						success:"Thành công",
+						error:"Thất bại.",
+						warning:"Cảnh báo.",
+						message:"Thông báo."
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-child">
+					<div class="header-logo"><a href="#!"><img src="./img/logo-main.svg" alt=""/></a></div>
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#"> <span>Trang chủ</span></a></li>
+							<li><a href="#"> <span>Giới thiệu</span></a></li>
+							<li><a href="#"> <span>Dịch vụ</span></a></li>
+							<li><a href="#"> <span>Tin tức</span></a></li>
+							<li><a href="#"> <span>Sản phẩm</span></a></li>
+							<li><a href="#"> <span>Liên hệ</span></a></li>
+						</ul>
+					</nav>
+					<div class="header-action">
+						<button class="btn btn-primary header-btn-menu" type="button"><span class="header-btn-menu__text">Danh mục</span><i class="fa-regular fa-bars"></i></button>
+						<button class="header-search" type="button"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.75 15.75L12.4875 12.4875M14.25 8.25C14.25 11.5637 11.5637 14.25 8.25 14.25C4.93629 14.25 2.25 11.5637 2.25 8.25C2.25 4.93629 4.93629 2.25 8.25 2.25C11.5637 2.25 14.25 4.93629 14.25 8.25Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="line-linear"></div>
+			<div class="header-search-form">
+				<div class="close"><i class="fa-light fa-xmark"></i></div>
+				<div class="container">
+					<div class="wrap-form-search-product">
+						<div class="productsearchbox">
+							<input type="text" placeholder="Tìm kiếm...">
+							<button class="btn-search">Tìm</button>
+						</div>
+						<div class="message-search">
+							 Nhấn <span>Esc </span> để đóng</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="line-linear"></div>
+			<section class="section-homepage-1">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide-bg"><img class="lozad" data-src="./img/banner_home.png" alt=""/>
+							</div>
+							<div class="slide-inner">
+								<div class="slide-content">
+									<h1 class="slide-content__title" data-ripple-text>VẠN PHÚC MUSIC</h1>
+									<p class="slide-content__desc" data-ripple-text data-ripple-text-types="lines">Sản phẩm nhập khẩu chính ngạch từ Nhật Bản,<br> Mỹ, Đức đảm bảo chính hãng 100%.</p><a class="btn btn-primary mt-15" href="#">Xem thêm</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-bg"><img class="lozad" data-src="./img/banner_home_1.png" alt=""/>
+							</div>
+							<div class="slide-inner">
+								<div class="slide-content">
+									<h1 class="slide-content__title" data-ripple-text>VẠN PHÚC MUSIC 2</h1>
+									<p class="slide-content__desc" data-ripple-text data-ripple-text-types="lines">Sản phẩm nhập khẩu chính ngạch từ Nhật Bản,<br> Mỹ, Đức đảm bảo chính hãng 100%.</p><a class="btn btn-primary mt-15" href="#">Xem thêm</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-bg"><img class="lozad" data-src="./img/banner_home_2.png" alt=""/>
+							</div>
+							<div class="slide-inner">
+								<div class="slide-content">
+									<h1 class="slide-content__title" data-ripple-text>VẠN PHÚC MUSIC 3</h1>
+									<p class="slide-content__desc" data-ripple-text data-ripple-text-types="lines">Sản phẩm nhập khẩu chính ngạch từ Nhật Bản,<br> Mỹ, Đức đảm bảo chính hãng 100%.</p><a class="btn btn-primary mt-15" href="#">Xem thêm</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container relative">
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="section-homepage-2">
+				<div class="bg-linear"></div>
+				<div class="bg-decor"><img class="lozad" data-src="/img/decor-section-2.svg" alt=""/>
+				</div>
+				<div class="container wrapper-content">
+					<div class="hp2-content" data-aos="fade-right"><span class="hp2-content__label" data-ripple-text data-ripple-text-types="chars">Đánh thức giác mơ nghệ thuật</span>
+						<h2 class="hp2-content__title" data-ripple-text>VẠN PHÚC MUSIC</h2>
+						<p class="hp2-content__desc" data-ripple-text data-ripple-text-types="lines">Vạn Phúc Music là đơn vị chuyên nhập khẩu và phân phối nhạc cụ chính ngạch tại Việt Nam. Chúng tôi cung cấp đa dạng các dòng piano, organ–keyboard, guitar, violin, trống saxophone,..., phục vụ nhu cầu học tập, luyện tập và biểu diễn chuyên nghiệp.</p><a class="btn btn-primary mt-10" href="#">Xem thêm</a>
+					</div>
+				</div>
+				<div class="hp2-video-box" data-aos="zoom-in" data-aos-delay="200">
+					<div class="image-linear">
+						<div class="poster"><img class="lozad" data-src="/img/video-linear.png" alt=""/>
+						</div>
+						<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+						</div>
+						<video autoplay muted loop playsinline>
+							<source src="" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="hp2-img-box hp2-img-box--1">
+					<div class="image-linear"><img class="lozad" data-src="/img/img-linear.png" alt=""/>
+					</div>
+				</div>
+				<div class="hp2-img-box hp2-img-box--2">
+					<div class="image-linear"><img class="lozad" data-src="/img/img-linear.png" alt=""/>
+					</div>
+				</div>
+				<div class="hp2-img-box hp2-img-box--3">
+					<div class="image-linear"><img class="lozad" data-src="/img/img-linear.png" alt=""/>
+					</div>
+				</div>
+				<div class="hp2-img-box hp2-img-box--4">
+					<div class="image-linear"><img class="lozad" data-src="/img/video-linear.png" alt=""/>
+					</div>
+				</div>
+				<div class="hp2-img-box hp2-img-box--5">
+					<div class="image-linear"><img class="lozad" data-src="/img/img-linear.png" alt=""/>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-3">
+				<div class="container">
+					<div class="hp3-grid">
+						<div class="hp3-item hp3-item--1" data-aos="fade-up"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Piano Điện</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_1.png" alt=""/>
+								</div></a></div>
+						<div class="hp3-item hp3-item--2" data-aos="fade-up" data-aos-delay="100"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Grand Piano</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_2.png" alt=""/>
+								</div></a></div>
+						<div class="hp3-item hp3-item--3" data-aos="fade-up" data-aos-delay="200"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Upright Piano</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_2.png" alt=""/>
+								</div></a></div>
+						<div class="hp3-item hp3-item--4" data-aos="fade-up" data-aos-delay="100"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Organ & Keyboard</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_2.png" alt=""/>
+								</div></a></div>
+						<div class="hp3-item hp3-item--5" data-aos="fade-up" data-aos-delay="200"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Trống</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_2.png" alt=""/>
+								</div></a></div>
+						<div class="hp3-item hp3-item--6" data-aos="fade-up" data-aos-delay="300"><a class="hp3-item__inner" href="#">
+								<div class="hp3-item__info">
+									<p class="hp3-item__name" data-ripple-text>Đàn Guitar</p><span class="hp3-item__link">Xem thêm</span>
+								</div>
+								<div class="hp3-item__img"><img class="lozad" data-src="./img/cate_1.png" alt=""/>
+								</div></a></div>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-4">
+				<div class="bg-wcu"><img class="lozad" data-src="./img/bg-why-choose-us.png" alt=""/>
+				</div>
+				<div class="container">
+					<div class="group-header" data-aos="fade-up">
+						<div class="header_label" data-ripple-text data-ripple-text-types="chars">Điểm nổi bật</div>
+						<div class="header_title" data-ripple-text>Lý Do Chọn Vạn Phúc Music</div>
+					</div>
+					<div class="hp4-grid">
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="0">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Cam kết “giá tốt nhất thị trường”</p>
+								<p class="hp4-item__desc">Chúng tôi luôn tối ưu hóa quy trình nhập hàng trực tiếp để mang đến mức giá cạnh tranh nhất.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="120">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Tiêu chuẩn sản phẩm chọn lọc kỹ</p>
+								<p class="hp4-item__desc">Mỗi sản phẩm đều trải qua quy trình kiểm định nghiêm ngặt về chất lượng và độ bền.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="240">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Đa dạng mẫu mã, model</p>
+								<p class="hp4-item__desc">Kho hàng phong phú với hàng trăm mẫu mã từ các thương hiệu nổi tiếng, bạn dễ dàng tìm sản phẩm.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="360">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Chính sách bảo hành lên tới 10 năm</p>
+								<p class="hp4-item__desc">Yên tâm sử dụng với chế độ hậu mãi dài hạn và chuyên nghiệp, chúng tôi cam kết đồng hành cùng bạn.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="480">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Đầy đủ chứng từ, nguồn gốc xuất xứ</p>
+								<p class="hp4-item__desc">100% sản phẩm có giấy tờ nhập khẩu chính ngạch, hóa đơn rõ ràng, minh bạch về nguồn gốc.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-item" data-aos="fade-up" data-aos-delay="600">
+							<div class="hp4-item__icon">
+								<div class="hp4-item__icon-inner"><img class="lozad" data-src="./img/icon_noibat.svg" alt=""/>
+								</div>
+							</div>
+							<div class="hp4-item__body">
+								<p class="hp4-item__title" data-ripple-text>Trả góp miễn phí quẹt thẻ</p>
+								<p class="hp4-item__desc">Hỗ trợ giải pháp tài chính linh hoạt với lãi suất 0% qua thẻ tín dụng, giúp bạn sở hữu sản phẩm yêu thích.</p>
+							</div>
+							<div class="line-item"></div>
+						</div>
+						<div class="hp4-dividers">
+							<div class="hp4-line hp4-line--v hp4-line--v1"></div>
+							<div class="hp4-line hp4-line--v hp4-line--v2"></div>
+							<div class="hp4-line hp4-line--h"></div>
+							<div class="hp4-star hp4-star--1"><img src="/img/star.svg" alt=""/>
+							</div>
+							<div class="hp4-star hp4-star--2"><img src="/img/star.svg" alt=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-5">
+				<div class="container">
+					<div class="group-header" data-aos="fade-up"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Sản phẩm</span>
+						<h2 class="header_title" data-ripple-text>Flash Sale</h2>
+					</div>
+					<div class="hp5-grid" data-aos="fade-up" data-aos-delay="100"><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__badge-discount">-50%</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Yamaha CLP 535WA</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">21.800.000 VNĐ</span><span class="product-item__price-original">23.500.000 VNĐ</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">USED</div>
+							<div class="product-item__badge-discount">-50%</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Yamaha CLP 575WA</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">21.800.000 VNĐ</span><span class="product-item__price-original">23.500.000 VNĐ</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">USED</div>
+							<div class="product-item__badge-discount">-50%</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Yamaha CLP 535M</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">21.800.000 VNĐ</span><span class="product-item__price-original">23.500.000 VNĐ</span></div>
+							</div></a>
+					</div>
+					<div class="hp5-footer" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary" href="#">Xem thêm</a></div>
+				</div>
+			</section>
+			<section class="section-homepage-6 section-cate-product">
+				<div class="hp6-banner">
+					<div class="hp6-banner__bg"><img class="lozad" data-src="/img/bg-cate.png" alt=""/>
+					</div>
+					<div class="hp6-banner__overlay"></div>
+					<div class="container"><a class="hp6-featured-card" href="#" data-aos="fade-right">
+							<div class="hp6-featured-card__thumb"><img class="lozad" data-src="/img/img-cate.png" alt=""/>
+							</div>
+							<div class="hp6-featured-card__info">
+								<div class="hp6-featured-card__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="hp6-featured-card__name">Roland GP 6PW</p><span class="hp6-featured-card__price">128.000.000 VNĐ</span>
+							</div>
+							<div class="hp6-featured-card__arrow"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.599976 16.6001L16.6 0.600098M16.6 0.600098H5.93331M16.6 0.600098V11.2668" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</div></a>
+						<div class="hp6-cate-info" data-aos="fade-left" data-aos-delay="100">
+							<h2 class="hp6-cate-info__title">Digital Piano</h2><a class="hp6-cate-info__link" href="#">Xem thêm</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="hp6-grid" data-aos="fade-up" data-aos-delay="100"><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Roland GP 609PW</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">125.000.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Roland GP 6PW</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">128.000.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Roland RG-7PE</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">48.500.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Roland GP 6PE</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">128.000.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Kawai CA 401B</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">32.000.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Kawai CA 12B</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">13.500.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Kawai CA 59B</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">28.500.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a><a class="product-item" href="#">
+							<div class="product-item__img"><img class="lozad" data-src="./img/product-img.png" alt=""/>
+							</div>
+							<div class="product-item__badge-condition">NEW</div>
+							<div class="product-item__info">
+								<div class="product-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="product-item__name">Kawai SCA 401R</p>
+								<div class="product-item__prices"><span class="product-item__price-sale">30.500.000 VNĐ</span><span class="product-item__price-original">false</span></div>
+							</div></a>
+					</div>
+					<div class="hp6-footer"><a class="btn btn-primary" href="#">Xem thêm</a></div>
+				</div>
+			</section>
+			<section class="section-homepage-7">
+				<div class="hp7-bg"><img class="lozad" data-src="./img/tuvan.png" alt=""/>
+				</div>
+				<div class="hp7-overlay"></div>
+				<div class="container">
+					<div class="hp7-content" data-aos="fade-right">
+						<div class="group-header title-left title-white mb-8"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Đánh thức giác mơ nghệ thuật</span>
+							<h2 class="header_title" data-ripple-text>Piano phù hợp</h2>
+						</div>
+						<p class="hp7-content__desc" data-ripple-text data-ripple-text-types="lines">Đội ngũ chuyên gia tại Vạn Phúc Music luôn sẵn sàng giúp bạn tìm ra người bạn đồng hành hoàn hảo nhất trên hành trình âm nhạc.</p><a class="btn btn-primary size-lg mt-12" href="#">Tư vấn mua sản phẩm miễn phí</a>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-8">
+				<div class="container">
+					<div class="group-header mb-10 lg:mb-15 xl:mb-20"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Đánh giá - Nhận xét</span>
+						<h2 class="header_title" data-ripple-text>Cảm nhận của khách hàng</h2>
+					</div>
+					<div class="hp8-wrap">
+						<div class="hp8-store-card" data-aos="fade-right">
+							<div class="hp8-store-card__img"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+							</div>
+							<div class="hp8-store-card__body">
+								<p class="hp8-store-card__name">Vạn Phúc Music – Phân Phối Đàn Piano Chính Hãng, Giá tốt</p>
+								<div class="hp8-store-card__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+								</div>
+								<p class="hp8-store-card__count">24 đánh giá trên Google</p><a class="btn btn-basic mt-3" href="#">Hãy viết bài đánh giá</a>
+							</div>
+						</div>
+						<div class="hp8-slider" data-aos="fade-left" data-aos-delay="100">
+							<button class="hp8-btn-prev" type="button"><i class="fa-regular fa-angle-left"></i></button>
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="hp8-testimonial-item">
+											<div class="hp8-testimonial-item__head">
+												<div class="hp8-testimonial-item__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												</div>
+												<div class="hp8-testimonial-item__meta">
+													<p class="hp8-testimonial-item__name">Hà Nguyễn</p><span class="hp8-testimonial-item__time">1 Tháng trước</span>
+												</div>
+												<div class="hp8-testimonial-item__gg"><img src="/img/icon_gg.svg" alt=""/>
+												</div>
+											</div>
+											<div class="hp8-testimonial-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+											</div>
+											<p class="hp8-testimonial-item__text">Tôi đã mua cây đàn organ Yamaha tại Vạn Phúc Music và rất ấn tượng với chất lượng sản phẩm lẫn dịch vụ. Nhân viên am hiểu kỹ sản phẩm, tư vấn tận tình và chính sách bảo hành rất tốt. Sẽ quay lại mua ở đây.</p>
+											<div id="testimonial-full-0" style="display:none">
+												<div class="hp8-testimonial-popup">
+													<div class="hp8-testimonial-popup__head">
+														<div class="hp8-testimonial-popup__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+														</div>
+														<div class="hp8-testimonial-popup__meta">
+															<p class="hp8-testimonial-popup__name">Hà Nguyễn</p><span class="hp8-testimonial-popup__time">1 Tháng trước</span>
+														</div>
+														<div class="hp8-testimonial-popup__gg"><img src="/img/icon_gg.svg" alt=""/>
+														</div>
+													</div>
+													<div class="hp8-testimonial-popup__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+													</div>
+													<p class="hp8-testimonial-popup__text">Tôi đã mua cây đàn organ Yamaha tại Vạn Phúc Music và rất ấn tượng với chất lượng sản phẩm lẫn dịch vụ. Nhân viên am hiểu kỹ sản phẩm, tư vấn tận tình và chính sách bảo hành rất tốt. Sẽ quay lại mua ở đây.</p>
+												</div>
+											</div><a class="hp8-testimonial-item__readmore" href="#testimonial-full-0" data-fancybox="" data-type="inline">Đọc thêm</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="hp8-testimonial-item">
+											<div class="hp8-testimonial-item__head">
+												<div class="hp8-testimonial-item__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												</div>
+												<div class="hp8-testimonial-item__meta">
+													<p class="hp8-testimonial-item__name">Quách Anh</p><span class="hp8-testimonial-item__time">1 Tháng trước</span>
+												</div>
+												<div class="hp8-testimonial-item__gg"><img src="/img/icon_gg.svg" alt=""/>
+												</div>
+											</div>
+											<div class="hp8-testimonial-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+											</div>
+											<p class="hp8-testimonial-item__text">Đàn guitar mua tại Vạn Phúc có âm thanh ấm, dây bấm nhẹ tay, phù hợp cho người chơi lâu như mình. Mình rất thích không gian cửa hàng, trưng bày chuyên nghiệp và nhân viên nhiệt tình.</p>
+											<div id="testimonial-full-1" style="display:none">
+												<div class="hp8-testimonial-popup">
+													<div class="hp8-testimonial-popup__head">
+														<div class="hp8-testimonial-popup__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+														</div>
+														<div class="hp8-testimonial-popup__meta">
+															<p class="hp8-testimonial-popup__name">Quách Anh</p><span class="hp8-testimonial-popup__time">1 Tháng trước</span>
+														</div>
+														<div class="hp8-testimonial-popup__gg"><img src="/img/icon_gg.svg" alt=""/>
+														</div>
+													</div>
+													<div class="hp8-testimonial-popup__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+													</div>
+													<p class="hp8-testimonial-popup__text">Đàn guitar mua tại Vạn Phúc có âm thanh ấm, dây bấm nhẹ tay, phù hợp cho người chơi lâu như mình. Mình rất thích không gian cửa hàng, trưng bày chuyên nghiệp và nhân viên nhiệt tình.</p>
+												</div>
+											</div><a class="hp8-testimonial-item__readmore" href="#testimonial-full-1" data-fancybox="" data-type="inline">Đọc thêm</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="hp8-testimonial-item">
+											<div class="hp8-testimonial-item__head">
+												<div class="hp8-testimonial-item__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												</div>
+												<div class="hp8-testimonial-item__meta">
+													<p class="hp8-testimonial-item__name">Thanh Nguyễn</p><span class="hp8-testimonial-item__time">1 Tháng trước</span>
+												</div>
+												<div class="hp8-testimonial-item__gg"><img src="/img/icon_gg.svg" alt=""/>
+												</div>
+											</div>
+											<div class="hp8-testimonial-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+											</div>
+											<p class="hp8-testimonial-item__text">Vạn Phúc Music thực sự là địa chỉ đáng tin cậy. Tôi đã mua nhiều loại nhạc cụ tại đây cho học sinh và bản thân. Giá cả hợp lý, bảo hành tốt, giao hàng nhanh.</p>
+											<div id="testimonial-full-2" style="display:none">
+												<div class="hp8-testimonial-popup">
+													<div class="hp8-testimonial-popup__head">
+														<div class="hp8-testimonial-popup__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+														</div>
+														<div class="hp8-testimonial-popup__meta">
+															<p class="hp8-testimonial-popup__name">Thanh Nguyễn</p><span class="hp8-testimonial-popup__time">1 Tháng trước</span>
+														</div>
+														<div class="hp8-testimonial-popup__gg"><img src="/img/icon_gg.svg" alt=""/>
+														</div>
+													</div>
+													<div class="hp8-testimonial-popup__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+													</div>
+													<p class="hp8-testimonial-popup__text">Vạn Phúc Music thực sự là địa chỉ đáng tin cậy. Tôi đã mua nhiều loại nhạc cụ tại đây cho học sinh và bản thân. Giá cả hợp lý, bảo hành tốt, giao hàng nhanh.</p>
+												</div>
+											</div><a class="hp8-testimonial-item__readmore" href="#testimonial-full-2" data-fancybox="" data-type="inline">Đọc thêm</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="hp8-testimonial-item">
+											<div class="hp8-testimonial-item__head">
+												<div class="hp8-testimonial-item__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												</div>
+												<div class="hp8-testimonial-item__meta">
+													<p class="hp8-testimonial-item__name">Minh Tuấn</p><span class="hp8-testimonial-item__time">2 Tháng trước</span>
+												</div>
+												<div class="hp8-testimonial-item__gg"><img src="/img/icon_gg.svg" alt=""/>
+												</div>
+											</div>
+											<div class="hp8-testimonial-item__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+											</div>
+											<p class="hp8-testimonial-item__text">Dịch vụ tư vấn tận tình, đội ngũ hỗ trợ sau bán hàng rất chân thành. Sản phẩm đúng chính hãng như cam kết, hài lòng 100%.</p>
+											<div id="testimonial-full-3" style="display:none">
+												<div class="hp8-testimonial-popup">
+													<div class="hp8-testimonial-popup__head">
+														<div class="hp8-testimonial-popup__avatar"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+														</div>
+														<div class="hp8-testimonial-popup__meta">
+															<p class="hp8-testimonial-popup__name">Minh Tuấn</p><span class="hp8-testimonial-popup__time">2 Tháng trước</span>
+														</div>
+														<div class="hp8-testimonial-popup__gg"><img src="/img/icon_gg.svg" alt=""/>
+														</div>
+													</div>
+													<div class="hp8-testimonial-popup__stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><img src="/img/check_testimonial.svg" alt=""/>
+													</div>
+													<p class="hp8-testimonial-popup__text">Dịch vụ tư vấn tận tình, đội ngũ hỗ trợ sau bán hàng rất chân thành. Sản phẩm đúng chính hãng như cam kết, hài lòng 100%.</p>
+												</div>
+											</div><a class="hp8-testimonial-item__readmore" href="#testimonial-full-3" data-fancybox="" data-type="inline">Đọc thêm</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="hp8-btn-next" type="button"><i class="fa-regular fa-angle-right"></i></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-9">
+				<div class="container">
+					<div class="hp9-header">
+						<div class="group-header !text-left !mb-0"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Cập nhật tin tức</span>
+							<h2 class="header_title" data-ripple-text>Tin tức – Sự kiện</h2>
+						</div><a class="btn btn-primary" href="#">Xem tất cả</a>
+					</div>
+					<div class="hp9-grid">
+						<div class="hp9-posts" data-aos="fade-right"><a class="post-item" href="#">
+								<div class="post-item__thumb"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+								</div>
+								<div class="post-item__body"><span class="post-item__date">19.04.2026</span>
+									<p class="post-item__title">Đàn piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</p>
+									<p class="post-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và edals là gì và chedals là gì và ch</p>
+								</div></a><a class="post-item" href="#">
+								<div class="post-item__thumb"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+								</div>
+								<div class="post-item__body"><span class="post-item__date">19.04.2026</span>
+									<p class="post-item__title">Đàn piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</p>
+									<p class="post-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và edals là gì và chedals là gì và ch</p>
+								</div></a><a class="post-item" href="#">
+								<div class="post-item__thumb"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+								</div>
+								<div class="post-item__body"><span class="post-item__date">19.04.2026</span>
+									<p class="post-item__title">Đàn piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</p>
+									<p class="post-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và edals là gì và chedals là gì và ch</p>
+								</div></a>
+						</div>
+						<div class="hp9-videos" data-aos="fade-left" data-aos-delay="100">
+							<div class="hp9-main">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="hp9-video-card">
+												<div class="hp9-video-card__media"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+												<p class="hp9-video-card__title">Cách dùng Pedal Sustain piano để tạo âm vang mượt mà</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-video-card">
+												<div class="hp9-video-card__media"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+												<p class="hp9-video-card__title">Hướng dẫn chọn đàn piano phù hợp cho người mới</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-video-card">
+												<div class="hp9-video-card__media"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+												<p class="hp9-video-card__title">Top 5 bài nhạc piano cảm xúc nhất 2026</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-video-card">
+												<div class="hp9-video-card__media"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+												<p class="hp9-video-card__title">Grand Piano vs Upright Piano: Nên chọn loại nào?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hp9-thumbs">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="hp9-thumb-item"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												<div class="hp9-thumb-item__play">
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-thumb-item"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												<div class="hp9-thumb-item__play">
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-thumb-item"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												<div class="hp9-thumb-item__play">
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hp9-thumb-item"><img class="lozad" data-src="https://picsum.photos/1600/900" alt=""/>
+												<div class="hp9-thumb-item__play">
+													<div class="btn-play btn-play-pulse"><svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M12 5.46717C13.3333 6.23697 13.3333 8.16147 12 8.93127L3 14.1274C1.66667 14.8972 -7.31543e-07 13.935 -6.64245e-07 12.3954L-2.09983e-07 2.00307C-1.42685e-07 0.463467 1.66667 -0.498786 3 0.271015L12 5.46717Z" fill="white"/>
+</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-10">
+				<div class="container-fluid">
+					<div class="group-header" data-aos="fade-up"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Khách hàng</span>
+						<h2 class="header_title" data-ripple-text>Thư viện ảnh</h2>
+					</div>
+					<div class="hp10-gallery"><a class="hp10-gallery__item is-tall" href="/img/banner_home_1.png" data-fancybox="hp10-gallery" data-aos="zoom-in">
+							<div class="hp10-gallery__inner"><img src="/img/banner_home_1.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a><a class="hp10-gallery__item is-lg" href="/img/banner_home_2.png" data-fancybox="hp10-gallery" data-aos="zoom-in" data-aos-delay="100">
+							<div class="hp10-gallery__inner"><img src="/img/banner_home_2.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a><a class="hp10-gallery__item is-md" href="/img/cate_1.png" data-fancybox="hp10-gallery" data-aos="zoom-in" data-aos-delay="150">
+							<div class="hp10-gallery__inner"><img src="/img/cate_1.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a><a class="hp10-gallery__item is-md" href="/img/cate_2.png" data-fancybox="hp10-gallery" data-aos="zoom-in" data-aos-delay="200">
+							<div class="hp10-gallery__inner"><img src="/img/cate_2.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a><a class="hp10-gallery__item is-lg" href="/img/cate_1.png" data-fancybox="hp10-gallery" data-aos="zoom-in" data-aos-delay="250">
+							<div class="hp10-gallery__inner"><img src="/img/cate_1.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a><a class="hp10-gallery__item is-tall" href="/img/cate_2.png" data-fancybox="hp10-gallery" data-aos="zoom-in" data-aos-delay="300">
+							<div class="hp10-gallery__inner"><img src="/img/cate_2.png" alt=""/>
+							</div>
+							<div class="hp10-gallery__overlay"></div></a>
+					</div>
+				</div>
+			</section>
+			<section class="section-homepage-11">
+				<div class="hp11-bg"><img class="lozad" data-src="./img/bg-partner.png" alt=""/>
+				</div>
+				<div class="container relative z-1">
+					<div class="group-header" data-aos="fade-up"><span class="header_label" data-ripple-text data-ripple-text-types="chars">Đối tác</span>
+						<h2 class="header_title" data-ripple-text>Các thương hiệu</h2>
+					</div>
+					<div class="hp11-brands" data-aos="fade-up" data-aos-delay="150">
+						<div class="hp11-brands__row">
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/boston.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+						</div>
+						<div class="hp11-brands__row">
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+							<div class="hp11-brand-item"><img src="./img/yamaha.png" alt=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="container-toast"></div>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-top__grid">
+						<div class="footer-col footer-col--brand" data-aos="fade-up"><a class="footer-logo" href="/"><img src="./img/logo-main.svg" alt=""/></a>
+							<div class="info">
+								<p>Khu đô Thị Vạn Phúc, 35 Đinh Thị Thi,<br> Phường Hiệp Bình, TP.HCM</p>
+								<p>vanphucmusic2025@gmail.com</p>
+							</div>
+							<div class="footer-badges"><img src="./img/dmca.png" alt=""/><img src="./img/dmca.png" alt=""/>
+							</div>
+						</div>
+						<div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+							<h3 class="footer-col__heading">Về chúng tôi</h3>
+							<ul class="menu">
+								<li class="menu-item"><a href="#">Giới thiệu</a></li>
+								<li class="menu-item"><a href="#">Tin tức</a></li>
+								<li class="menu-item"><a href="#">Cửa hàng</a></li>
+								<li class="menu-item"><a href="#">Tuyển dụng</a></li>
+								<li class="menu-item"><a href="#">Liên hệ</a></li>
+								<li class="menu-item"><a href="#">Bảo mật</a></li>
+							</ul>
+						</div>
+						<!-- Col 3: Chính sách-->
+						<div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+							<h3 class="footer-col__heading">Chính sách</h3>
+							<ul class="menu">
+								<li class="menu-item"><a href="#">Hướng dẫn mua hàng</a></li>
+								<li class="menu-item"><a href="#">Vận chuyển</a></li>
+								<li class="menu-item"><a href="#">Bảo hành – Bảo trì</a></li>
+								<li class="menu-item"><a href="#">Thanh toán – Trả góp</a></li>
+								<li class="menu-item"><a href="#">Chính Sách Đổi Trả</a></li>
+								<li class="menu-item"><a href="#">Điều Khoản Dịch Vụ</a></li>
+							</ul>
+						</div>
+						<!-- Col 4: Kết nối-->
+						<div class="footer-col footer-col--connect" data-aos="fade-up" data-aos-delay="300">
+							<h3 class="footer-col__heading">Kết nối với chúng tôi</h3>
+							<form class="footer-newsletter" action="#" method="post">
+								<input type="email" name="email" placeholder="Nhập email nhận thông tin ...">
+								<button type="submit" aria-label="Gửi"><i class="fa-regular fa-paper-plane"></i></button>
+							</form>
+							<div class="footer-socials"><a class="footer-social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a class="footer-social" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a class="footer-social" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+							<div class="footer-hotline">
+								<p class="footer-hotline__label">Hotline, đặt hàng, bảo hành</p><a class="footer-hotline__number" href="tel:0915777988">0915.777.988</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="line-linear"></div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom__grid">
+						<div class="footer-bottom-col" data-aos="fade-up"><span class="footer-bottom__label">Đặt hàng online</span>
+							<p class="footer-bottom__title">GIAO HÀNG TẬN NƠI</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="100">
+							<p class="footer-bottom__heading">Quyền lợi khách hàng,<br> đổi mới sản phẩm</p>
+							<p class="footer-bottom__desc">Đổi mới trong vòng 15 ngày nếu sản phẩm bị lỗi do nhà sản xuất</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="200">
+							<div class="footer-payment"><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/>
+							</div>
+							<p class="footer-bottom__desc">Chấp nhận thanh toán trực tiếp, chuyển khoản hoặc online bằng</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="300">
+							<p class="footer-bottom__heading">Tư vấn và giao hàng tận nơi trên toàn quốc.</p><a class="footer-bottom__phone" href="tel:0915777988">0915.77.79.88<span> (Hotline)</span></a><a class="footer-bottom__phone" href="tel:0915777988">0915.77.79.88<span> (Viber, Zalo)</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="header-search-form">
+			<div class="close"><i class="fa-light fa-xmark"></i></div>
+			<div class="container">
+				<div class="wrap-form-search-product">
+					<div class="productsearchbox">
+						<input type="text" placeholder="Tìm kiếm...">
+						<button class="btn-search">Tìm</button>
+					</div>
+					<div class="message-search">
+						 Nhấn <span>Esc </span> để đóng</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/core.min.js"></script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>
