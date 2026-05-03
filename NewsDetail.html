@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href=""><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+		<title></title>
+		<script>
+			var APP_CONFIG={
+				toast:{
+					title:{
+						success:"Thành công",
+						error:"Thất bại.",
+						warning:"Cảnh báo.",
+						message:"Thông báo."
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-child">
+					<div class="header-logo"><a href="#!"><img src="./img/logo-main.svg" alt=""/></a></div>
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#"> <span>Trang chủ</span></a></li>
+							<li><a href="#"> <span>Giới thiệu</span></a></li>
+							<li><a href="#"> <span>Dịch vụ</span></a></li>
+							<li><a href="#"> <span>Tin tức</span></a></li>
+							<li><a href="#"> <span>Sản phẩm</span></a></li>
+							<li><a href="#"> <span>Liên hệ</span></a></li>
+						</ul>
+					</nav>
+					<div class="header-action">
+						<button class="btn btn-primary header-btn-menu js-mega-menu-trigger" type="button"><span class="header-btn-menu__text">Danh mục</span><i class="fa-regular fa-bars"></i></button>
+						<button class="header-search" type="button"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.75 15.75L12.4875 12.4875M14.25 8.25C14.25 11.5637 11.5637 14.25 8.25 14.25C4.93629 14.25 2.25 11.5637 2.25 8.25C2.25 4.93629 4.93629 2.25 8.25 2.25C11.5637 2.25 14.25 4.93629 14.25 8.25Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+						</button><a class="cart-header"><i class="fa-regular fa-cart-shopping"></i><span class="count-cart cart-count basket-qty">5</span></a>
+					</div>
+					<button class="header-hamburger-mobile js-mobile-menu-open" type="button" aria-label="Mở menu"><i class="fa-regular fa-bars"></i></button>
+				</div>
+				<div class="mega-menu" aria-hidden="true">
+					<div class="mega-menu__inner">
+						<div class="mega-menu__tabs">
+							<button class="mega-menu__tab is-active" type="button" data-tab="grand-piano" data-img="https://picsum.photos/seed/grandpiano/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Kawai&quot;,&quot;Steinway &amp; Son&quot;,&quot;C.Bechstein&quot;,&quot;Boston&quot;,&quot;Fazioli&quot;,&quot;Casio&quot;,&quot;Apollo&quot;,&quot;Roland&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Grand Piano</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="upright-piano" data-img="https://picsum.photos/seed/uprightpiano/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Kawai&quot;,&quot;Apollo&quot;,&quot;Roland&quot;,&quot;C.Bechstein&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Upright Piano</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="digital-piano" data-img="https://picsum.photos/seed/digitalpiano/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Casio&quot;,&quot;Roland&quot;,&quot;Korg&quot;,&quot;Kawai&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Digital Piano</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="keyboard" data-img="https://picsum.photos/seed/keyboard/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Casio&quot;,&quot;Roland&quot;,&quot;Korg&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Keyboard Piano</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="trong" data-img="https://picsum.photos/seed/drums/600/420" data-brands="[&quot;Pearl&quot;,&quot;Mapex&quot;,&quot;Ludwig&quot;,&quot;Tama&quot;,&quot;DW&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Trống</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="guitar" data-img="https://picsum.photos/seed/guitar/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Fender&quot;,&quot;Gibson&quot;,&quot;Taylor&quot;,&quot;Takamine&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Guitar</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="saxophone" data-img="https://picsum.photos/seed/saxophone/600/420" data-brands="[&quot;Yamaha&quot;,&quot;Selmer&quot;,&quot;Jupiter&quot;,&quot;Yanagisawa&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Saxophone</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="lop-hoc" data-img="https://picsum.photos/seed/lophoc/600/420" data-brands="[&quot;Piano&quot;,&quot;Guitar&quot;,&quot;Violin&quot;,&quot;Trống&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Lớp học</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="phong-tap-band" data-img="https://picsum.photos/seed/bandroom/600/420" data-brands="[&quot;Phòng A&quot;,&quot;Phòng B&quot;,&quot;Phòng C&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Phòng tập Band</span>
+							</button>
+							<button class="mega-menu__tab" type="button" data-tab="phu-kien" data-img="https://picsum.photos/seed/accessories/600/420" data-brands="[&quot;Ghế Piano&quot;,&quot;Bàn phím&quot;,&quot;Dây đàn&quot;,&quot;Bao đàn&quot;,&quot;Ampli&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Phụ kiện</span>
+							</button>
+						</div>
+						<div class="mega-menu__panel">
+							<div class="mega-menu__content is-active" data-content="grand-piano">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Kawai</a></li>
+										<li><a href="#">Steinway &amp; Son</a></li>
+										<li><a href="#">C.Bechstein</a></li>
+										<li><a href="#">Boston</a></li>
+										<li><a href="#">Fazioli</a></li>
+										<li><a href="#">Casio</a></li>
+										<li><a href="#">Apollo</a></li>
+										<li><a href="#">Roland</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/grandpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="upright-piano">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Kawai</a></li>
+										<li><a href="#">Apollo</a></li>
+										<li><a href="#">Roland</a></li>
+										<li><a href="#">C.Bechstein</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/uprightpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="digital-piano">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Casio</a></li>
+										<li><a href="#">Roland</a></li>
+										<li><a href="#">Korg</a></li>
+										<li><a href="#">Kawai</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/digitalpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="keyboard">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Casio</a></li>
+										<li><a href="#">Roland</a></li>
+										<li><a href="#">Korg</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/keyboard/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="trong">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Pearl</a></li>
+										<li><a href="#">Mapex</a></li>
+										<li><a href="#">Ludwig</a></li>
+										<li><a href="#">Tama</a></li>
+										<li><a href="#">DW</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/drums/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="guitar">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Fender</a></li>
+										<li><a href="#">Gibson</a></li>
+										<li><a href="#">Taylor</a></li>
+										<li><a href="#">Takamine</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/guitar/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="saxophone">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Yamaha</a></li>
+										<li><a href="#">Selmer</a></li>
+										<li><a href="#">Jupiter</a></li>
+										<li><a href="#">Yanagisawa</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/saxophone/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="lop-hoc">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Piano</a></li>
+										<li><a href="#">Guitar</a></li>
+										<li><a href="#">Violin</a></li>
+										<li><a href="#">Trống</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/lophoc/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="phong-tap-band">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Phòng A</a></li>
+										<li><a href="#">Phòng B</a></li>
+										<li><a href="#">Phòng C</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/bandroom/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mega-menu__content" data-content="phu-kien">
+								<div class="mega-menu__brands">
+									<p class="mega-menu__brands-label">THƯƠNG HIỆU</p>
+									<ul class="mega-menu__brands-list">
+										<li><a href="#">Ghế Piano</a></li>
+										<li><a href="#">Bàn phím</a></li>
+										<li><a href="#">Dây đàn</a></li>
+										<li><a href="#">Bao đàn</a></li>
+										<li><a href="#">Ampli</a></li>
+									</ul>
+								</div>
+								<div class="mega-menu__image"><img class="lozad" data-src="https://picsum.photos/seed/accessories/600/420" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-linear"></div>
+			<div class="mobile-overlay js-mobile-overlay"></div>
+			<div class="mobile-drawer mobile-drawer--l1 js-drawer-l1">
+				<div class="mobile-drawer__header"><span class="mobile-drawer__title">Menu</span>
+					<button class="mobile-drawer__close js-mobile-menu-close" type="button" aria-label="Đóng menu"><i class="fa-regular fa-xmark"></i></button>
+				</div>
+				<nav class="mobile-drawer__nav">
+					<ul class="mobile-drawer__list">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#">Giới thiệu</a></li>
+						<li><a href="#">Dịch vụ</a></li>
+						<li><a href="#">Tin tức</a></li>
+						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="#">Liên hệ</a></li>
+						<li class="mobile-drawer__list-item--cat">
+							<button class="js-drawer-l2-open" type="button"><span>Danh Mục</span><i class="fa-regular fa-chevron-right"></i></button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mobile-drawer mobile-drawer--l2 js-drawer-l2">
+				<div class="mobile-drawer__header mobile-drawer__header--l2">
+					<button class="mobile-drawer__back js-drawer-l2-close" type="button" aria-label="Quay lại"><i class="fa-regular fa-chevron-left"></i><span>Quay lại</span></button>
+				</div>
+				<div class="mobile-drawer__body">
+					<div class="mobile-cat-panel">
+						<div class="mobile-cat-panel__tabs">
+							<button class="mobile-cat-panel__tab is-active" type="button" data-tab="grand-piano" data-brands="[&quot;Yamaha&quot;,&quot;Kawai&quot;,&quot;Steinway &amp; Son&quot;,&quot;C.Bechstein&quot;,&quot;Boston&quot;,&quot;Fazioli&quot;,&quot;Casio&quot;,&quot;Apollo&quot;,&quot;Roland&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Grand Piano</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="upright-piano" data-brands="[&quot;Yamaha&quot;,&quot;Kawai&quot;,&quot;Apollo&quot;,&quot;Roland&quot;,&quot;C.Bechstein&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Upright Piano</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="digital-piano" data-brands="[&quot;Yamaha&quot;,&quot;Casio&quot;,&quot;Roland&quot;,&quot;Korg&quot;,&quot;Kawai&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Digital Piano</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="keyboard" data-brands="[&quot;Yamaha&quot;,&quot;Casio&quot;,&quot;Roland&quot;,&quot;Korg&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Keyboard Piano</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="trong" data-brands="[&quot;Pearl&quot;,&quot;Mapex&quot;,&quot;Ludwig&quot;,&quot;Tama&quot;,&quot;DW&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Trống</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="guitar" data-brands="[&quot;Yamaha&quot;,&quot;Fender&quot;,&quot;Gibson&quot;,&quot;Taylor&quot;,&quot;Takamine&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Guitar</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="saxophone" data-brands="[&quot;Yamaha&quot;,&quot;Selmer&quot;,&quot;Jupiter&quot;,&quot;Yanagisawa&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Saxophone</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="lop-hoc" data-brands="[&quot;Piano&quot;,&quot;Guitar&quot;,&quot;Violin&quot;,&quot;Trống&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Lớp học</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="phong-tap-band" data-brands="[&quot;Phòng A&quot;,&quot;Phòng B&quot;,&quot;Phòng C&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Phòng tập Band</span>
+							</button>
+							<button class="mobile-cat-panel__tab" type="button" data-tab="phu-kien" data-brands="[&quot;Ghế Piano&quot;,&quot;Bàn phím&quot;,&quot;Dây đàn&quot;,&quot;Bao đàn&quot;,&quot;Ampli&quot;]"><img src="./img/icon-grand-piano.svg" alt=""/><span>Phụ kiện</span>
+							</button>
+						</div>
+						<div class="mobile-cat-panel__brands">
+							<div class="mobile-cat-panel__brand-group is-active" data-content="grand-piano">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Kawai</a><a class="mobile-cat-panel__brand" href="#">Steinway &amp; Son</a><a class="mobile-cat-panel__brand" href="#">C.Bechstein</a><a class="mobile-cat-panel__brand" href="#">Boston</a><a class="mobile-cat-panel__brand" href="#">Fazioli</a><a class="mobile-cat-panel__brand" href="#">Casio</a><a class="mobile-cat-panel__brand" href="#">Apollo</a><a class="mobile-cat-panel__brand" href="#">Roland</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/grandpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="upright-piano">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Kawai</a><a class="mobile-cat-panel__brand" href="#">Apollo</a><a class="mobile-cat-panel__brand" href="#">Roland</a><a class="mobile-cat-panel__brand" href="#">C.Bechstein</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/uprightpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="digital-piano">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Casio</a><a class="mobile-cat-panel__brand" href="#">Roland</a><a class="mobile-cat-panel__brand" href="#">Korg</a><a class="mobile-cat-panel__brand" href="#">Kawai</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/digitalpiano/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="keyboard">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Casio</a><a class="mobile-cat-panel__brand" href="#">Roland</a><a class="mobile-cat-panel__brand" href="#">Korg</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/keyboard/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="trong">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Pearl</a><a class="mobile-cat-panel__brand" href="#">Mapex</a><a class="mobile-cat-panel__brand" href="#">Ludwig</a><a class="mobile-cat-panel__brand" href="#">Tama</a><a class="mobile-cat-panel__brand" href="#">DW</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/drums/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="guitar">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Fender</a><a class="mobile-cat-panel__brand" href="#">Gibson</a><a class="mobile-cat-panel__brand" href="#">Taylor</a><a class="mobile-cat-panel__brand" href="#">Takamine</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/guitar/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="saxophone">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Yamaha</a><a class="mobile-cat-panel__brand" href="#">Selmer</a><a class="mobile-cat-panel__brand" href="#">Jupiter</a><a class="mobile-cat-panel__brand" href="#">Yanagisawa</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/saxophone/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="lop-hoc">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Piano</a><a class="mobile-cat-panel__brand" href="#">Guitar</a><a class="mobile-cat-panel__brand" href="#">Violin</a><a class="mobile-cat-panel__brand" href="#">Trống</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/lophoc/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="phong-tap-band">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Phòng A</a><a class="mobile-cat-panel__brand" href="#">Phòng B</a><a class="mobile-cat-panel__brand" href="#">Phòng C</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/bandroom/600/420" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-cat-panel__brand-group" data-content="phu-kien">
+								<p class="mobile-cat-panel__brands-label">THƯƠNG HIỆU</p><a class="mobile-cat-panel__brand" href="#">Ghế Piano</a><a class="mobile-cat-panel__brand" href="#">Bàn phím</a><a class="mobile-cat-panel__brand" href="#">Dây đàn</a><a class="mobile-cat-panel__brand" href="#">Bao đàn</a><a class="mobile-cat-panel__brand" href="#">Ampli</a>
+								<div class="mobile-cat-panel__image"><img class="lozad" data-src="https://picsum.photos/seed/accessories/600/420" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-search-form">
+				<div class="close"><i class="fa-light fa-xmark"></i></div>
+				<div class="container">
+					<div class="wrap-form-search-product">
+						<div class="productsearchbox">
+							<input type="text" placeholder="Tìm kiếm...">
+							<button class="btn-search">Tìm</button>
+						</div>
+						<div class="message-search">
+							 Nhấn <span>Esc </span> để đóng</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="global-breadcrumb">
+				<div class="container">
+					<nav class="rank-math-breadcrumb" aria-label="breadcrumbs">
+						<p><a href="/">Trang chủ</a><span class="separator"> > </span><a href="/tin-tuc">Tin tức – Sự kiện</a><span class="separator"> > </span><a href="/tin-tuc/kien-thuc-piano">Kiến thức Piano</a><span class="separator"> > </span><span class="last">Đàn Piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</span></p>
+					</nav>
+				</div>
+			</section>
+			<div class="bg-image-top"><img class="lozad" data-src="https://picsum.photos/seed/newsdetailbanner/1920/500" alt=""/>
+			</div>
+			<section class="section-news-detail">
+				<div class="container">
+					<article class="news-post post hentry" id="post-1">
+						<div class="news-post__header entry-header">
+							<div class="news-post__meta">
+								<time class="news-post__date" datetime="2026-04-19">19.04.2026</time><span class="news-post__sep"> · </span><a class="news-post__cat" href="/tin-tuc/meo-hay-hoc-piano" rel="category tag">Mẹo hay học Piano</a>
+							</div>
+							<h1 class="news-post__title entry-title">Đàn piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</h1>
+							<p class="news-post__lead">Đàn piano có mất giá không là câu hỏi được rất nhiều người quan tâm trước khi quyết định mua đàn. Với giá trị lớn, piano được xem như một khoản đầu tư lâu dài, vì vậy ai cũng muốn biết mức độ khấu hao của nhạc cụ này. Tùy thuộc vào thương hiệu, chất lượng cũng như cách bảo quản, giá trị của đàn có thể thay đổi theo thời gian. Bài viết dưới đây Vạn Phúc Music sẽ phân tích chi tiết để bạn có cái nhìn rõ hơn.</p>
+						</div>
+						<div class="news-post__featured post-thumbnail"><img class="lozad" data-src="https://picsum.photos/seed/newsdetail/1200/680" alt=""/>
+						</div>
+						<div id="ez-toc-container">
+							<div class="ez-toc-title">Bài viết này có gì?</div>
+							<div class="ez-toc-list">
+								<ul>
+									<li><a href="#section1">Đàn piano có giảm giá trị theo thời gian không?</a></li>
+									<li><a href="#section2">Kinh nghiệm bảo quản đàn piano hiệu quả</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="news-post__content entry-content">
+							<h2>Đàn piano có giảm giá trị theo thời gian không?</h2>
+							<p>Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và chúng có vai trò gì trong việc biểu diễn. Bài viết này sẽ giúp bạn hiểu rõ hơn về tầm quan trọng của từng loại bàn đạp.</p>
+							<p>Giá trị của một cây đàn piano phụ thuộc nhiều vào thương hiệu và chất lượng. Đàn Yamaha hay Kawai chính hãng thường giữ giá tốt hơn so với các hãng ít biết đến. Việc bảo trì định kỳ và bảo quản đúng cách cũng đóng vai trò quan trọng trong việc duy trì giá trị của nhạc cụ.</p>
+							<h2>Kinh nghiệm bảo quản đàn piano hiệu quả</h2>
+							<p>Tránh đặt đàn ở nơi có độ ẩm cao hoặc dưới ánh sáng mặt trời chiếu trực tiếp. Lợt sơn bóng bên ngoài và dây đàn bên trong đều dễ bị ảnh hưởng nếu không được bảo quản đúng cách. Nên điều chỉnh lại đàn mỗi năm 1-2 lần để giàn đàn luôn ở trạng thái đúng.</p>
+							<ul>
+								<li>Thương hiệu và năm sản xuất: Những thương hiệu lớn, có bề dày lịch sử và chất lượng được khẳng định như Steinway & Sons, Yamaha, Kawai thường giữ giá tốt hơn. Các cây đàn được sản xuất trong những “thời kỳ vàng” của một thương hiệu cũng có giá trị cao hơn.</li>
+								<li>Kinh nghiệm bảo quản đàn piano hiệu quả</li>
+							</ul>
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">Kích Thước &amp; Trọng Lượng &amp; Thiết kế</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Chiều rộng</td>
+										<td>1450 mm</td>
+									</tr>
+									<tr>
+										<td>Chiều cao</td>
+										<td>927 mm (nâng giá nhạc: 1003 mm)</td>
+									</tr>
+									<tr>
+										<td>Chiều sâu</td>
+										<td>460 mm</td>
+									</tr>
+									<tr>
+										<td>Trọng lượng</td>
+										<td>57 kg</td>
+									</tr>
+									<tr>
+										<td>Màu sắc</td>
+										<td>Nâu gỗ</td>
+									</tr>
+									<tr>
+										<td>Nắp phím</td>
+										<td>Dạng trượt</td>
+									</tr>
+									<tr>
+										<td>Giá để bản nhạc</td>
+										<td>Có</td>
+									</tr>
+									<tr>
+										<td>Thanh giữ bản nhạc (Music Braces)</td>
+										<td>Có</td>
+									</tr>
+									<tr>
+										<td>Bảng điều khiển</td>
+										<td>Nút vật lý</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">Âm thanh</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nguồn âm thanh</td>
+										<td>CFX &amp; Bösendorfer Imperial</td>
+									</tr>
+									<tr>
+										<td>Đa âm (Polyphony)</td>
+										<td>256</td>
+									</tr>
+									<tr>
+										<td>Tiếng nhạc cụ</td>
+										<td>36 tiếng</td>
+									</tr>
+									<tr>
+										<td>Virtual Resonance Modeling</td>
+										<td>Có</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<section class="comments-area" id="comments">
+							<h2 class="comments-title">Để lại bình luận</h2>
+							<div id="respond">
+								<form class="comment-form" id="commentform" method="post">
+									<p class="comment-form-author">
+										<input class="nd-input" id="author" type="text" name="author" placeholder="Tên của bạn" required aria-label="Tên">
+									</p>
+									<p class="comment-form-email">
+										<input class="nd-input" id="email" type="email" name="email" placeholder="Email của bạn" required aria-label="Email">
+									</p>
+									<p class="comment-form-comment">
+										<textarea class="nd-textarea" id="comment" name="comment" placeholder="Chia sẻ ý kiến của bạn" rows="5" required aria-label="Bình luận"></textarea>
+									</p>
+									<p class="comment-notes">Lưu ý: Bình luận cần được chấp thuận trước khi công khai.</p>
+									<p class="form-submit">
+										<input class="submit nd-submit" id="submit" type="submit" name="submit" value="Gửi bình luận">
+									</p>
+								</form>
+							</div>
+						</section>
+						<div class="post-author vcard">
+							<div class="post-author__bg"><img class="lozad" data-src="https://picsum.photos/seed/authorbg/1200/400" alt=""/>
+							</div>
+							<div class="post-author__inner">
+								<div class="post-author__avatar"><img class="lozad" data-src="https://picsum.photos/seed/authoravt/200/200" alt=""/>
+								</div>
+								<div class="post-author__info"><a class="post-author__name url fn" href="#" rel="author">Nguyễn Đức Lực</a>
+									<p class="post-author__bio">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy.</p>
+									<div class="post-author__socials"><a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="X / Twitter" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="Pinterest" rel="noopener noreferrer"><i class="fa-brands fa-pinterest-p"></i></a></div>
+								</div>
+							</div>
+						</div>
+						<nav class="post-navigation nav-links" aria-label="Bài viết">
+							<div class="nav-previous"><a href="#" rel="prev"><i class="fa-regular fa-chevron-left"></i><span>Bài trước</span></a></div>
+							<div class="nav-next"><a href="#" rel="next"><span>Bài sau</span><i class="fa-regular fa-chevron-right"></i></a></div>
+						</nav>
+						<div class="section-news-latest">
+							<h2 class="news-latest__title">Bài viết mới nhất</h2>
+							<div class="news-grid"><a class="news-item" href="#">
+									<div class="news-item__img"><img class="lozad" data-src="https://picsum.photos/seed/news7/900/600" alt=""/>
+									</div>
+									<div class="news-item__body">
+										<div class="news-item__meta"><span class="news-item__date">19.04.2026</span><span class="news-item__sep"> · </span><span class="news-item__cat">Mẹo hay học Piano</span></div>
+										<h3 class="news-item__title">Đàn piano có mất giá không? Kinh nghiệm bảo quản hiệu quả</h3>
+										<p class="news-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và chúng có va...</p>
+									</div></a><a class="news-item" href="#">
+									<div class="news-item__img"><img class="lozad" data-src="https://picsum.photos/seed/news99/900/600" alt=""/>
+									</div>
+									<div class="news-item__body">
+										<div class="news-item__meta"><span class="news-item__date">19.04.2026</span><span class="news-item__sep"> · </span><span class="news-item__cat">Mẹo hay học Piano</span></div>
+										<h3 class="news-item__title">Mẹo hay giúp tạo động lực học piano cho trẻ mỗi ngày</h3>
+										<p class="news-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và chúng có va...</p>
+									</div></a><a class="news-item" href="#">
+									<div class="news-item__img"><img class="lozad" data-src="https://picsum.photos/seed/news56/900/600" alt=""/>
+									</div>
+									<div class="news-item__body">
+										<div class="news-item__meta"><span class="news-item__date">19.04.2026</span><span class="news-item__sep"> · </span><span class="news-item__cat">Review</span></div>
+										<h3 class="news-item__title">Review 5 địa điểm mua đàn piano tại TPHCM uy tín nhất</h3>
+										<p class="news-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và chúng có va...</p>
+									</div></a><a class="news-item" href="#">
+									<div class="news-item__img"><img class="lozad" data-src="https://picsum.photos/seed/news64/900/600" alt=""/>
+									</div>
+									<div class="news-item__body">
+										<div class="news-item__meta"><span class="news-item__date">19.04.2026</span><span class="news-item__sep"> · </span><span class="news-item__cat">Mẹo hay học Piano</span></div>
+										<h3 class="news-item__title">Tất tần tật về vòng hợp âm Blues 12 ô nhịp bạn cần biết</h3>
+										<p class="news-item__excerpt">Khi học chơi đàn, nhiều người thường băn khoăn Piano Pedals là gì và chúng có va...</p>
+									</div></a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<div id="container-toast"></div>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-top__grid">
+						<div class="footer-col footer-col--brand" data-aos="fade-up"><a class="footer-logo" href="/"><img src="./img/logo-main.svg" alt=""/></a>
+							<div class="info">
+								<p>Khu đô Thị Vạn Phúc, 35 Đinh Thị Thi,<br> Phường Hiệp Bình, TP.HCM</p>
+								<p>vanphucmusic2025@gmail.com</p>
+							</div>
+							<div class="footer-badges"><img src="./img/dmca.png" alt=""/><img src="./img/dmca.png" alt=""/>
+							</div>
+						</div>
+						<div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+							<h3 class="footer-col__heading">Về chúng tôi</h3>
+							<ul class="menu">
+								<li class="menu-item"><a href="#">Giới thiệu</a></li>
+								<li class="menu-item"><a href="#">Tin tức</a></li>
+								<li class="menu-item"><a href="#">Cửa hàng</a></li>
+								<li class="menu-item"><a href="#">Tuyển dụng</a></li>
+								<li class="menu-item"><a href="#">Liên hệ</a></li>
+								<li class="menu-item"><a href="#">Bảo mật</a></li>
+							</ul>
+						</div>
+						<!-- Col 3: Chính sách-->
+						<div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+							<h3 class="footer-col__heading">Chính sách</h3>
+							<ul class="menu">
+								<li class="menu-item"><a href="#">Hướng dẫn mua hàng</a></li>
+								<li class="menu-item"><a href="#">Vận chuyển</a></li>
+								<li class="menu-item"><a href="#">Bảo hành – Bảo trì</a></li>
+								<li class="menu-item"><a href="#">Thanh toán – Trả góp</a></li>
+								<li class="menu-item"><a href="#">Chính Sách Đổi Trả</a></li>
+								<li class="menu-item"><a href="#">Điều Khoản Dịch Vụ</a></li>
+							</ul>
+						</div>
+						<!-- Col 4: Kết nối-->
+						<div class="footer-col footer-col--connect" data-aos="fade-up" data-aos-delay="300">
+							<h3 class="footer-col__heading">Kết nối với chúng tôi</h3>
+							<form class="footer-newsletter" action="#" method="post">
+								<input type="email" name="email" placeholder="Nhập email nhận thông tin ...">
+								<button type="submit" aria-label="Gửi"><i class="fa-regular fa-paper-plane"></i></button>
+							</form>
+							<div class="footer-socials"><a class="footer-social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a class="footer-social" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a class="footer-social" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+							<div class="footer-hotline">
+								<p class="footer-hotline__label">Hotline, đặt hàng, bảo hành</p><a class="footer-hotline__number" href="tel:0915777988">0915.777.988</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="line-linear"></div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom__grid">
+						<div class="footer-bottom-col" data-aos="fade-up"><span class="footer-bottom__label">Đặt hàng online</span>
+							<p class="footer-bottom__title">GIAO HÀNG TẬN NƠI</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="100">
+							<p class="footer-bottom__heading text-gradient-primary">Quyền lợi khách hàng,<br> đổi mới sản phẩm</p>
+							<p class="footer-bottom__desc">Đổi mới trong vòng 15 ngày nếu sản phẩm bị lỗi do nhà sản xuất</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="200">
+							<div class="footer-payment"><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/><img src="./img/visa.png" alt=""/>
+							</div>
+							<p class="footer-bottom__desc">Chấp nhận thanh toán trực tiếp, chuyển khoản hoặc online bằng</p>
+						</div>
+						<div class="footer-bottom-col" data-aos="fade-up" data-aos-delay="300">
+							<p class="footer-bottom__heading text-gradient-primary">Tư vấn và giao hàng tận nơi trên toàn quốc.</p><a class="footer-bottom__phone" href="tel:0915777988">0915.77.79.88<span> (Hotline)</span></a><a class="footer-bottom__phone" href="tel:0915777988">0915.77.79.88<span> (Viber, Zalo)</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="header-search-form">
+			<div class="close"><i class="fa-light fa-xmark"></i></div>
+			<div class="container">
+				<div class="wrap-form-search-product">
+					<div class="productsearchbox">
+						<input type="text" placeholder="Tìm kiếm...">
+						<button class="btn-search">Tìm</button>
+					</div>
+					<div class="message-search">
+						 Nhấn <span>Esc </span> để đóng</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/core.min.js"></script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>
